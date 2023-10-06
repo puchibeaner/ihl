@@ -1,0 +1,136 @@
+
+header, footer, .mb-3 {
+  text-align: center;
+}
+
+img.mb-4 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin: 30px;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #84abd1;
+  color: #395b7e;
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.inicio-sesion-form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out; /* Animación de entrada */
+}
+
+.inicio-sesion-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: slideInDown 0.5s ease-in-out; /* Animación de entrada */
+}
+
+.inicio-sesion-form label {
+  display: block;
+  margin-bottom: 10px;
+  opacity: 0; /* Inicialmente oculto */
+  animation: slideInLeft 0.5s ease-in-out 0.3s forwards; /* Animación de entrada */
+}
+
+.inicio-sesion-form input[type="text"],
+.inicio-sesion-form input[type="password"],
+.inicio-sesion-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  opacity: 0; /* Inicialmente oculto */
+  animation: slideInRight 0.5s ease-in-out 0.6s forwards; /* Animación de entrada */
+}
+
+.inicio-sesion-form button[type="submit"] {
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0; /* Inicialmente oculto */
+  animation: fadeIn 0.5s ease-in-out 0.9s forwards; /* Animación de entrada */
+}
+
+.inicio-sesion-form button[type="submit"]:hover {
+  background-color: #005bae;
+}
+
+/* Estilos para el enlace de registro */
+.inicio-sesion-form p {
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out 1.2s forwards; /* Animación de entrada */
+}
+
+.inicio-sesion-form a {
+  color: #0078d4;
+  text-decoration: none;
+}
+
+.inicio-sesion-form a:hover {
+  text-decoration: underline;
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-10px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(10px);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
