@@ -1,0 +1,65 @@
+body {
+    background-color: rgb(58, 146, 161);
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    margin: 7%;
+    margin-top: 1cm;
+    white-space-collapse: 12rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 20px;
+}
+
+.side-panel {
+    display: flex;
+    flex-direction: column;
+    margin: 1cm;
+}
+
+.comment-box {
+    background-color: white;
+    padding: 50px;
+    border-radius: 5px;
+    margin: 1cm;
+    margin-top: 1cm;
+    margin-left: 36%;
+    width: 35%;
+    margin-bottom: 2%;
+}
+
+.category-box {
+    background-color: white;
+    padding: 2%;
+    padding-top: 7px ;
+    border-radius: 5px;
+    margin: 1px;
+    margin-top: 1cm;
+    width: 90%;
+    margin-bottom: 2% ;
+    margin-left: 7%; /* Mueve estos elementos hacia la derecha dentro de card-group */
+}
+
+/* Agrega estilos a los botones dentro de .category-box */
+.category-box button {
+    background-color: #4b92dd; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 8px 8px; /* Relleno interno */
+    margin: 20px; /* Márgenes */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+.category-box button:hover {
+    background-color: #4b92dd; /* Color de fondo al pasar el mouse */
+}
+
+.category-box button:focus {
+    outline: none; /* Elimina el contorno al enfocarse */
+    box-shadow: 0 0 0 3px rgba(177, 208, 241, 0.5); /* Sombra al enfocarse */
+}
